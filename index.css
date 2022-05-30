@@ -1,0 +1,66 @@
+body {
+    font-family: 'Quicksand';
+    background-color: #221F23;
+    margin: 0%;
+}
+
+
+.navbar-container {
+    overflow: hidden;
+    background-color: #F4B02A;
+}
+
+
+.navbar-container a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+
+  .logo {
+    width: 5rem;
+  }
+
+
+  .navbar-container a:hover {
+    background-color: #F5B83D;
+    color: #0C090D;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    cursor: pointer;
+  }
+  
+
+  .navbar-container a.active {
+    background-color: #CA2E55;
+    color: white;
+    font-weight: 500;
+  }
+  
+
+  .navbar {
+    float: right;
+  }
+  
+
+  @media screen and (max-width: 400px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
+    .logo {
+        display: none;
+    }
+  }
