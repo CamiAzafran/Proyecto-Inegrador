@@ -1,0 +1,131 @@
+html body {
+    font-family: 'Quicksand';
+    background-color: #221F23;
+    margin: 0%;
+}
+
+
+.navbar-container {
+    overflow: hidden;
+    background-color: #F4B02A;
+}
+
+
+.navbar-container a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+
+  .logo {
+    width: 5rem;
+  }
+
+
+  .navbar-container a:hover {
+    background-color: #F5B83D;
+    color: #0C090D;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    cursor: pointer;
+  }
+  
+
+  .navbar-container a.active {
+    background-color: #CA2E55;
+    color: white;
+    font-weight: 500;
+  }
+  
+
+  .navbar {
+    float: right;
+  }
+  
+.recuadro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .contacto-container {
+    width: 60vw;
+    height: 90vh;
+    border-radius: 10px;
+    background-color: #0C090D;
+    padding: 10px;
+    color: white;
+  }
+
+
+  input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border: 1px solid #221F23;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    border-radius: 20px;
+  }
+
+
+  input[type=submit] {
+    background-color: #CA2E55;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 15vw;
+  }
+
+  input[type=submit]:hover {
+      background-color: #F4B02A;
+  }
+
+
+  .inputs-color {
+      color: #0C090D;
+      font-weight: 800;
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
+    .logo {
+        display: none;
+    }
+  }
+
+
+  @media (max-width: 700px) {
+      .contacto-container {
+          width: 100%;
+      }
+  }
