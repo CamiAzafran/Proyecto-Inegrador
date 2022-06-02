@@ -4,7 +4,7 @@
     <link rel="icon" type="image/x-icon" href="./img/pngaaa.com-524167.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>kermit home</title>
+    <title>Kermit cocina home</title>
 </head>
 <body>
     <div class="navbar-container">
@@ -12,10 +12,47 @@
         <div class="navbar">
           <a class="active" href="index.html">Home</a>
           <a href="img.html">Images</a>
-          <a href="#about">About</a>
           <a href="login.html">Log In</a>
           <a href="contact.html">Contact</a>
         </div>
     </div>
+    <div class="container">
+        <div class="recuadro-about">
+            <div class="container-info">
+                <h1>Kermit cocina</h1>
+                <p>Kermit nunca sabe que cocinarle a su señora, por eso hizo una pagina que te da recetas al azar asi no te pasa lo mismo. Tocando el botón "recetas" podes redirigirte a una receta random; el botón de abajo ("learn more") te lleva a un video educativo sobre nuestra web. Nunca te quedes sin ideas!
+                </p>
+                <div>
+                     <script>
+                    var randomlinks=new Array()
+                    
+                    randomlinks[0]="https://www.paulinacocina.net/receta-arroz-primavera/25870"
+                    randomlinks[1]="https://www.paulinacocina.net/receta-chocotorta-original/21722"
+                    randomlinks[2]="https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/"
+                    randomlinks[3]="https://www.paulinacocina.net/como-hacer-polenta-con-tuco/25872"
+                    randomlinks[4]="https://www.paulinacocina.net/colita-de-cuadril-al-horno/24770"
+                    randomlinks[5]="https://www.paulinacocina.net/ingrediente/brocoli"
+                    
+                    function randomlink(){
+                    window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+                    }
+                    </script>
+                    <form method="post">
+                    <p><input class="boton1" type="button" name="B1" value="recetas!" onclick="randomlink()"></p> </form>
+                </div>
+                    <div>
+                        <form target="_blank" action="https://youtube.com/shorts/vz4wlkI0LHw?feature=share">
+                        <button name="boton2" class="boton2">
+                            learn more
+                        </button>
+                    </div>
+                </form>
+            </div>
+           <div class="recuadro-img">
+               <img src="/img/kermit-about.webp" alt="kermit feliz sentadito">
+           </div>
+        </div>
+            
+           
 </body>
 </html>
