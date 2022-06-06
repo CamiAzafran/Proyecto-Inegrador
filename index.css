@@ -242,6 +242,10 @@ cursor: pointer;
       height: 70vh;
     }
 
+    .portada-container {
+      background-position: right;
+    }
+
     footer {
       display: none;
     }
