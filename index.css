@@ -50,44 +50,56 @@ body {
   }
 
 
+.portada-container {
+  background-image: url(/img/kermit-hamburguesa.webp);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: optimizeQuality;
+  background-position: center;
+  filter: grayscale();
+
+}
+
+
   .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
 .recuadro-about {
-    width: 90%;
-    height: 100vh;
-    background-color: #221F23;
-    display: flex;
+  width: 90%;
+  height: 100vh;
+  background-color: #221F23;
+  display: flex;
 }
 
 
 .container-info {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 80px;
-    margin-right: 80px;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 
 p {
-   color: white;
-   font-family: 'Quicksand';
-   font-weight: 400; 
-   font-size: 1.1rem;
-   letter-spacing: 0.6px;
-   word-spacing: 0.6px;
-   white-space: pre-line;
-   line-height: 1.7rem;
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: 400; 
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  word-spacing: 0.6px;
+  white-space: pre-wrap;
+  line-height: 1.7rem;
 }
 
 
@@ -99,47 +111,47 @@ h1 {
 
 
 .boton1 {
-    font-family: 'Quicksand';
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-    color: white;
-    background-color: #F4B02A;
-    border-radius: 20px;
-    border: none;
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    padding: 0 20px;
+  font-size: 16px;
+  font-family: 'Quicksand';
+  letter-spacing: 0.6px;
+  color: white;
+  background-color: #F4B02A;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  padding: 0 20px;
+  font-weight: 600;
 }
 
 
 .boton2 {
-    font-family: 'Quicksand';
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-    color: #F4B02A;
-    background-color: #221F23;
-    border-radius: 20px;
-    border: 3px solid #F4B02A;
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    padding: 0 20px;
+  font-family: 'Quicksand';
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #F4B02A;
+  background-color: #221F23;
+  border-radius: 20px;
+  border: 3px solid #F4B02A;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  padding: 0 20px;
 }
 
 
 .recuadro-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: scale-down;
-    object-position: bottom;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: scale-down;
+  object-position: bottom;
 }
 
 
-.boton1:hover{
+.boton1:hover {
 color: white;
 background-color: #CA2E55;
 border: none;
@@ -147,12 +159,60 @@ cursor: pointer;
 }
 
 
-.boton2:hover{
-    color: #CA2E55;
-    background-color: #221F23;
-    border: 3px solid #CA2E55;
-    cursor: pointer;
-    }
+.boton2:hover {
+  color: #CA2E55;
+  background-color: #221F23;
+  border: 3px solid #CA2E55;
+  cursor: pointer;
+}
+
+
+.footer-container {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: #151316;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
+.footer-container p h3 {
+  font-family: 'Quicksand';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.footer-text p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #605562;
+}
+
+
+.footer-links {
+  justify-content: left;
+}
+
+
+.footer-links a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #605562;
+  margin-right: 0.5px;
+}
+
+
+.footer-links a:hover {
+  color: #F4B02A;
+  font-weight: 300;
+}
   
 
   @media screen and (max-width: 400px) {
@@ -179,6 +239,14 @@ cursor: pointer;
     .recuadro-about {
       display: flex;
       justify-content: center;
-      resize: vertical;
+      height: 70vh;
+    }
+
+    .portada-container {
+      background-position: right;
+    }
+
+    footer {
+      display: none;
     }
   }
